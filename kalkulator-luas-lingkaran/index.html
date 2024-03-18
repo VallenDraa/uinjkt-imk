@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script defer src="./script.js"></script>
+		<title>Apalah ni</title>
+	</head>
+	<body class="font-bold bg-zinc-950">
+		<div class="max-w-xl px-4 py-8 mx-auto">
+			<div class="flex flex-col justify-between gap-1">
+				<p class="text-sm text-zinc-500">
+					Tugas 1 | Interaksi Manusia dan Komputer
+				</p>
+
+				<h1 class="text-2xl text-zinc-400">
+					🧮 Kalkulator Luas Lingkaran
+				</h1>
+			</div>
+
+			<div
+				class="flex flex-col gap-4 p-4 mt-4 border rounded-lg shadow shadow-zinc-900 border-zinc-800 bg-zinc-900"
+			>
+				<input
+					type="number"
+					placeholder="Masukkan Jari-jari (cm)"
+					id="input-jari-jari"
+					class="p-2 transition rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-zinc-900 focus-visible:ring-offset-2 bg-zinc-800 text-zinc-500 placeholder:text-zinc-500"
+				/>
+
+				<button
+					id="tombol-hitung-luas"
+					class="py-2 px-5 rounded transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-zinc-900 focus-visible:ring-offset-2 bg-green-700 text-zinc-200 [&:not([disabled])]:hover:bg-green-600 [&:not([disabled])]:active:bg-green-800 disabled:opacity-70 disabled:cursor-not-allowed"
+				>
+					📏 Hitung
+				</button>
+			</div>
+
+			<div
+				class="p-4 mt-6 border rounded-lg shadow shadow-zinc-900 border-zinc-800 bg-zinc-900"
+			>
+				<h2 class="mb-3 text-xl text-zinc-400">
+					👇 Hasil Perhitungan
+				</h2>
+				<p
+					id="output-luas-lingkaran"
+					class="text-4xl font-extrabold text-green-600 break-words"
+				>
+					0 cm<sup>2</sup>
+				</p>
+
+				<hr class="my-7 border-zinc-700" />
+
+				<div>
+					<h2 class="mb-3 text-xl text-zinc-400">
+						📝 Rumus
+					</h2>
+
+					<ol class="flex flex-col gap-4">
+						<li>
+							<h3 class="text-zinc-600">Langkah 1</h3>
+							<p class="text-2xl text-zinc-500">L = π x r<sup>2</sup></p>
+						</li>
+
+						<li>
+							<h3 class="text-zinc-600">Langkah 2</h3>
+							<p
+								id="angka-dalam-rumus"
+								class="text-2xl break-words text-zinc-500"
+							>
+								L = 3,142 x 0<sup>2</sup>
+							</p>
+						</li>
+
+						<li>
+							<h3 class="text-zinc-600">Langkah 3</h3>
+							<p
+								id="hasil-perhitungan-rumus"
+								class="text-2xl break-words text-zinc-500"
+							>
+								L = 0 cm<sup>2</sup>
+							</p>
+						</li>
+					</ol>
+				</div>
+
+				<hr class="mb-4 mt-7 border-zinc-700" />
+
+				<div class="flex justify-between text-xs text-zinc-600">
+					<p>Dibuat oleh kelompok 4</p>
+
+					<p>2024 | IMK</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
