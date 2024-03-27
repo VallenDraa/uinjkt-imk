@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script defer src="./script.js"></script>
-		<title>Apalah ni</title>
+		<title>Kalkulator Luas Lingkaran</title>
 	</head>
 	<body class="font-bold bg-zinc-950">
 		<div class="max-w-xl px-4 py-8 mx-auto">
@@ -14,9 +14,7 @@
 					Tugas 1 | Interaksi Manusia dan Komputer
 				</p>
 
-				<h1 class="text-2xl text-zinc-400">
-					🧮 Kalkulator Luas Lingkaran
-				</h1>
+				<h1 class="text-2xl text-zinc-400">🧮 Kalkulator Luas Lingkaran</h1>
 			</div>
 
 			<div
@@ -40,9 +38,7 @@
 			<div
 				class="p-4 mt-6 border rounded-lg shadow shadow-zinc-900 border-zinc-800 bg-zinc-900"
 			>
-				<h2 class="mb-3 text-xl text-zinc-400">
-					👇 Hasil Perhitungan
-				</h2>
+				<h2 class="mb-3 text-xl text-zinc-400">👇 Hasil Perhitungan</h2>
 				<p
 					id="output-luas-lingkaran"
 					class="text-4xl font-extrabold text-green-600 break-words"
@@ -53,9 +49,7 @@
 				<hr class="my-7 border-zinc-700" />
 
 				<div>
-					<h2 class="mb-3 text-xl text-zinc-400">
-						📝 Rumus
-					</h2>
+					<h2 class="mb-3 text-xl text-zinc-400">📝 Rumus</h2>
 
 					<ol class="flex flex-col gap-4">
 						<li>
@@ -83,6 +77,12 @@
 							</p>
 						</li>
 					</ol>
+				</div>
+
+				<!-- Histori Perhitungan -->
+				<div id="histori-perhitungan" class="mt-6">
+					<h2 class="mb-3 text-xl text-zinc-400">📚 Histori Perhitungan</h2>
+					<ul id="histori-list" class="text-zinc-500"></ul>
 				</div>
 
 				<hr class="mb-4 mt-7 border-zinc-700" />
